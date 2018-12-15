@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Bootstrap</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div id="window" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                   &times;
+                </button>
+                <h4 class="modal-title">Заголовок</h4>
+            </div>
+            <div class="modal-body">
+                <p>Текст</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Закрыть
+                </button>
+                <buton type="button" class="btn btn-primary">
+                    Сохранить
+                </buton>
+            </div>
+        </div>
+        </div>
+        </div>
+        
+        <button type="button" id="launcher" class="btn btn-primary btn-lg">
+            Запустить модальное окно
+        </button>
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src= 
+            "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        </script>
+        
+        <script>
+            $("#launcher").on("click", function() {
+               $("#window").modal("show"); 
+            });
+        </script>
+    </body>

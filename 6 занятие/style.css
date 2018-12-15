@@ -1,0 +1,23 @@
+html , body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    border: 2px solid black;
+}
+
+.square {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+}

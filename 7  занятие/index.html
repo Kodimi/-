@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>JQerry</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="container">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+            $(".block").on("mouseenter", function() {
+                $(this).siblings().toggleClass("block-lit")            
+            });
+        </script>
+    </body>
+</html>
