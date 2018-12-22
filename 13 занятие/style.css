@@ -57,11 +57,7 @@ div {
 article {
     background-color: blue;
     padding: 10px;
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0;
-    right: 40%;
+    right: 100%;
     display: flex;
     flex-flow: column;
     border-right: 5px solid whitesmoke;

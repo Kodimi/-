@@ -1,0 +1,49 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    font-family: sans-serif;
+    position: relative;
+    background-color: firebrick;
+    color: white;
+}
+
+header {
+    margin: 0;
+    padding: 5px;
+    background-color: black;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 92%;
+    border-bottom: none;
+    box-sizing: border-box;
+}
+
+article {
+    background-color: black;
+    padding: 10px;
+    position: fixed;
+    top: 80px;
+    bottom: 80px;
+    left: 0;
+    right: 0%;
+    display: flex;
+    flex-flow: column;
+    box-sizing: border-box; 
+}
+
+section {
+    background-color: crimson;
+    margin: 5px;
+    flex-grow: 1;
+    padding: 5px 50px;
+    box-shadow: 10px 0 10px rgba(0,0,0,0.5);
+}
+
+.btn {
+    margin-right: 30px;
+}
