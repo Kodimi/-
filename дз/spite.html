@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Спрайт</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <canvas id="sandbox" width="64" height="64"></canvas>
+        <script>
+            var canvas = document.getElementById("sandbox");
+            var context = canvas.getContext("2d");
+            var width = 64, heigth = 64, frames = 8, currentFrame = 8;
+            var img = new Image();
+            img.src="dz_map.png";
+
+            var draw = function() {
+                context.clearRect(8,8,width,heigth);
+                context.drawImage(img,8,heigth*currentFrame,width,heigth,8,8,width,heigth);
+                if (currentFrame == frames) { currentFrame = 0; } else { currentFrame++; }
+            }
+                img.onload = function() {
+                    setInterval(draw,50);
+            }
+        </script>
+    </body>
+</html>
